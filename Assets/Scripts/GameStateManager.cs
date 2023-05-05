@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameStateManager : MonoBehaviour
 {
 
+    ParticleSystem part;
     public int score;
+    public bool win;
 
     public int getScore()
     {
@@ -26,12 +28,16 @@ public class GameStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        part = GameObject.Find("Confetti").GetComponent<ParticleSystem>();
         score = 0;
+        win = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (win){
+            part.Play();
+        }
     }
 }
