@@ -31,9 +31,11 @@ public class NPC : MonoBehaviour {
     }
 	
 	void Update () {
+            /*
           Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position); //chatbackground position
-          Pos.y += 175; //make it above the character
+          Pos.y += 100; //make it above the character
           ChatBackGround.position = Pos; //set position
+          */
 
           score = gsm.score; //pass the score from gsm to here
           underSlideEntered = GameObject.Find("UnderSlideTrigger").GetComponent<underSlideCollider>().underSlideEntered;
@@ -52,19 +54,50 @@ public class NPC : MonoBehaviour {
             
             //code that handles quest state
             if(this.gameObject.tag == "Heart Kirby"){
-                // Heart Kirby's Quest requires a collection minigame
-                if(score >= 5) {
+                gsm.kirbyTalkedTo = true;
+                if(score >= 5) { //Collect all other art kirbys to complete teddys quest
                     questCompleted = true;
                     gsm.kirbyIsFriend = true;
                 }
             }
             
             if (this.gameObject.tag == "Kangaroo") {
-                if(underSlideEntered){
+                gsm.kangarooTalkedTo = true;
+                if(underSlideEntered){ //go under the slide to complete teddys quest
                     questCompleted = true;
                     gsm.kangarooIsFriend = true;
                 }
             }
+
+            
+            if (this.gameObject.tag == "Hat Girl") {
+                if (gsm.teddyDogTalkedTo){
+                    gsm.hattieTalkedTo = true; //true if you talk to her at least once after talking to teddydog;
+                }
+                if(gsm.teddyDogIsFriend){
+                    questCompleted = true; //she will be friends with you if you're friends with teddy dog
+                    gsm.hattieIsFriend = true;
+                }
+            }
+
+            
+            if (this.gameObject.tag == "Teddy Dog") {
+                gsm.teddyDogTalkedTo = true;
+                if (gsm.hattieTalkedTo){ //talk to hattie to complete teddys quest
+                    questCompleted = true;
+                    gsm.teddyDogIsFriend = true;
+                }
+            }
+
+            if (this.gameObject.tag == "Giraffe") {
+                gsm.giraffeIsFriend = true;
+            }
+
+            if (this.gameObject.tag == "Scruffy Dog") {
+                gsm.scruffyIsFriend = true;
+            }
+            
+
 
             dialogueSystem.Names = Name; //the name in the dialogueSystem is the name of the NPC
 

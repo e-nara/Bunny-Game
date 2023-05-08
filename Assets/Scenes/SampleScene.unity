@@ -937,7 +937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.12779999, y: -14.117197}
+  m_AnchoredPosition: {x: -49.9, y: -8}
   m_SizeDelta: {x: 159.2555, y: 57.7482}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366977716
@@ -2030,15 +2030,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695860627}
-  m_LocalRotation: {x: -0, y: 0.0034786796, z: -0, w: 0.999994}
-  m_LocalPosition: {x: 17.736, y: 0, z: 8.094}
-  m_LocalScale: {x: 1.3977, y: 1.3977, z: 1.3977}
+  m_LocalRotation: {x: -0, y: -0.005582852, z: -0, w: 0.9999845}
+  m_LocalPosition: {x: 17.702435, y: 0, z: 8.550627}
+  m_LocalScale: {x: 1.3977, y: 1.3977, z: 1.1868849}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1249467764}
   m_Father: {fileID: 541811520}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0.399, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.64, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,7 +2522,7 @@ MonoBehaviour:
   dialogueActive: 0
   dialogueEnded: 0
   outOfRange: 1
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: b4ad6a985966baf40b4f696fdc1a70ef, type: 3}
 --- !u!82 &918065200
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2533,8 +2533,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: b4ad6a985966baf40b4f696fdc1a70ef, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3166,7 +3166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.5653, y: 37.743095}
+  m_AnchoredPosition: {x: -49.9, y: 44}
   m_SizeDelta: {x: 151.8693, y: 16.7138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101447841
@@ -8814,6 +8814,14 @@ MonoBehaviour:
   win: 1
   kirbyIsFriend: 0
   kangarooIsFriend: 0
+  teddyDogIsFriend: 0
+  hattieIsFriend: 0
+  giraffeIsFriend: 0
+  scruffyIsFriend: 0
+  hattieTalkedTo: 0
+  teddyDogTalkedTo: 0
+  kirbyTalkedTo: 0
+  kangarooTalkedTo: 0
 --- !u!4 &1385954893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1362544481890875351, guid: ff74a2d207593764ea3699571e28d00a,
@@ -9422,8 +9430,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.44159, y: 0}
-  m_SizeDelta: {x: 169.7664, y: 100}
+  m_AnchoredPosition: {x: 0.0000085831, y: -72.10968}
+  m_SizeDelta: {x: 346.2326, y: 120.3111}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1527666933
 MonoBehaviour:
@@ -9445,7 +9453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5218e6e098c322042849a0599ce43c22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9940,15 +9948,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937934438}
-  m_LocalRotation: {x: -0, y: -0.43080327, z: -0, w: 0.90244585}
-  m_LocalPosition: {x: 30.39, y: -1.9099874, z: 8.18}
+  m_LocalRotation: {x: -0, y: 0.2871554, z: -0, w: 0.957884}
+  m_LocalPosition: {x: 45.806305, y: -1.9099874, z: -7.2514105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 441005869}
   m_Father: {fileID: 1159223650}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -51.037, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 33.375, z: 0}
 --- !u!4 &2041601252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7621463442920724631, guid: 0ef87058d11dd764abf30aefa470c526,
@@ -11188,15 +11196,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072238143774315261}
-  m_LocalRotation: {x: -0, y: 0.7311557, z: -0, w: 0.6822106}
-  m_LocalPosition: {x: 34.906002, y: -0.25000668, z: -4.166}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.01682856, y: 0.0053058458, z: 0.020065239, w: 0.999643}
+  m_LocalPosition: {x: 6.0895844, y: -0.14000034, z: 18.81}
+  m_LocalScale: {x: 1, y: 0.81502, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3457086685561823197}
   m_Father: {fileID: 541811520}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 93.967, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.94, y: 0.569, z: 2.29}
 --- !u!1 &1708969197794968987
 GameObject:
   m_ObjectHideFlags: 0
@@ -11369,7 +11377,7 @@ GameObject:
   - component: {fileID: 4316380110892772121}
   m_Layer: 0
   m_Name: textured
-  m_TagString: Untagged
+  m_TagString: Scruffy Dog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12572,9 +12580,10 @@ GameObject:
   - component: {fileID: 4005047080656046716}
   - component: {fileID: 2155832457850054318}
   - component: {fileID: 5748831215281691275}
+  - component: {fileID: 5748831215281691276}
   m_Layer: 0
   m_Name: textured
-  m_TagString: Untagged
+  m_TagString: Teddy Dog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12985,15 +12994,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5548420245523585222}
-  m_LocalRotation: {x: -0, y: 0.736979, z: -0, w: 0.6759157}
-  m_LocalPosition: {x: 9.37, y: 9.53, z: -24.27}
+  m_LocalRotation: {x: -0, y: -0.1863055, z: -0, w: 0.9824919}
+  m_LocalPosition: {x: 17.87, y: 8.22, z: 6.68}
   m_LocalScale: {x: 1.274, y: 1.274, z: 1.274}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 681083055329636175}
   m_Father: {fileID: 175842882}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 94.949, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -21.475, z: 0}
 --- !u!4 &5189016071597987255
 Transform:
   m_ObjectHideFlags: 0
@@ -13393,6 +13402,30 @@ CapsuleCollider:
   m_Height: 0.013587367
   m_Direction: 1
   m_Center: {x: 0.00063140877, y: 0.00010228716, z: 0.00052802684}
+--- !u!114 &5748831215281691276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4220941142114869250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232d87065db6c6447aa50143a1a80e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 1527666932}
+  NPCCharacter: {fileID: 5748831215281691274}
+  Name: Ted the Teddy
+  score: 0
+  underSlideEntered: 0
+  sentences:
+  - Hey, could you go talk to my friend? Her name is Hattie.
+  - 'she''s up on that tall drawer, but my little paws can''t take me there. '
+  sentencesConditional:
+  - Oh good, you found Hattie!! Er.. but you should probably go let her know you
+    found me...
+  questCompleted: 0
 --- !u!1 &5779649946852950838
 GameObject:
   m_ObjectHideFlags: 0
@@ -13852,6 +13885,7 @@ GameObject:
   - component: {fileID: 6225473360813799777}
   - component: {fileID: 7695257743218730259}
   - component: {fileID: 7695257743218730258}
+  - component: {fileID: 7695257743218730260}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -14802,6 +14836,18 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!114 &7695257743218730260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6225473360813799789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce661d4fe5f8305489d41c1835712e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7719126790990620959
 Transform:
   m_ObjectHideFlags: 0
@@ -15426,7 +15472,7 @@ GameObject:
   - component: {fileID: 8659120356998627487}
   m_Layer: 0
   m_Name: textured
-  m_TagString: Untagged
+  m_TagString: Giraffe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15648,13 +15694,52 @@ GameObject:
   - component: {fileID: 681083055329636175}
   - component: {fileID: 8151669255503822777}
   - component: {fileID: 6584065657927095147}
+  - component: {fileID: 8946270353859646920}
+  - component: {fileID: 8946270353859646921}
   m_Layer: 0
   m_Name: textured
-  m_TagString: Untagged
+  m_TagString: Hat Girl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &8946270353859646920
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946270353859646919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.009838456
+  m_Height: 0.020983607
+  m_Direction: 1
+  m_Center: {x: 0.0041355193, y: 0.00071861874, z: -0.00026532006}
+--- !u!114 &8946270353859646921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946270353859646919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232d87065db6c6447aa50143a1a80e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 1527666932}
+  NPCCharacter: {fileID: 681083055329636175}
+  Name: Hattie
+  score: 0
+  underSlideEntered: 0
+  sentences:
+  - Oh hey, you found me! Nobody usually comes up here..
+  sentencesConditional:
+  - You know Ted? Its a relief that he was looking out for me...
+  - Y'know, any friend of Ted is a friend of mine!
+  questCompleted: 0
 --- !u!1 &8949440746416418108
 GameObject:
   m_ObjectHideFlags: 0

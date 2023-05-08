@@ -22,7 +22,7 @@ public class underSlideCollider : MonoBehaviour
 
     void OnTriggerStay(Collider collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && gsm.kangarooTalkedTo) //only trigger the collider if youve already talked to the kangaroo
         {
             underSlideEntered = true;
         }

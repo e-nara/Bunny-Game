@@ -21,7 +21,7 @@ public class CollectableBehaviour : MonoBehaviour
 
     void OnTriggerStay(Collider collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && gsm.kirbyTalkedTo)
         {
             Destroy(this.gameObject);
             gsm.adjustScore(1);

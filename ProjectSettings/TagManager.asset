@@ -7,6 +7,10 @@ TagManager:
   - CinemachineTarget
   - Heart Kirby
   - Kangaroo
+  - Teddy Dog
+  - Hat Girl
+  - Giraffe
+  - Scruffy Dog
   layers:
   - Default
   - TransparentFX

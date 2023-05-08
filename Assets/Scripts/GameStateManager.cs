@@ -11,6 +11,18 @@ public class GameStateManager : MonoBehaviour
 
     public bool kirbyIsFriend;
     public bool kangarooIsFriend;
+    public bool teddyDogIsFriend;
+    public bool hattieIsFriend;
+    public bool giraffeIsFriend;
+    public bool scruffyIsFriend;
+
+    public bool hattieTalkedTo; //store in the gsm to pass between NPCs
+    public bool teddyDogTalkedTo;
+    public bool kirbyTalkedTo;
+    public bool kangarooTalkedTo; 
+    //only stored for quest-giving npcs
+    //doesnt apply to characters who you can befriend through dialogue alone
+    //this is to avoid 
 
     public int getScore()
     {
@@ -25,7 +37,7 @@ public class GameStateManager : MonoBehaviour
     public void adjustScore(int s)
     {
         score += s;
-        Debug.Log("Score is " + score); //no longer needed; handled by UI
+        //Debug.Log("Score is " + score); //no longer needed; handled by UI
     }
 
 
@@ -36,14 +48,24 @@ public class GameStateManager : MonoBehaviour
         score = 0;
         kirbyIsFriend = false;
         kangarooIsFriend = false;
+        teddyDogIsFriend = false;
+        hattieIsFriend = false;
+        giraffeIsFriend = false;
+        scruffyIsFriend = false;
+
         win = false;
+
+        hattieTalkedTo = false;
+        teddyDogTalkedTo = false;
+        kirbyTalkedTo = false;
+        kangarooTalkedTo = false;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(kirbyIsFriend && kangarooIsFriend){
+        if(kirbyIsFriend && kangarooIsFriend && giraffeIsFriend && teddyDogIsFriend && hattieIsFriend && scruffyIsFriend){
             win = true;
         }
 
