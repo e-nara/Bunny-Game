@@ -11375,6 +11375,8 @@ GameObject:
   - component: {fileID: 7622942074009098045}
   - component: {fileID: 1268075539680446411}
   - component: {fileID: 4316380110892772121}
+  - component: {fileID: 7622942074009098047}
+  - component: {fileID: 7622942074009098046}
   m_Layer: 0
   m_Name: textured
   m_TagString: Scruffy Dog
@@ -11981,6 +11983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2814101596855630350}
+  - component: {fileID: 3190346042281304245}
   m_Layer: 0
   m_Name: scruffy dog
   m_TagString: Untagged
@@ -11988,6 +11991,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &3190346042281304245
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190346042281304244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.260062
+  m_Height: 0.9404083
+  m_Direction: 1
+  m_Center: {x: -0.047297552, y: -0.029795928, z: 0.0007832002}
 --- !u!23 &3226220194929692262
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14724,6 +14741,42 @@ Transform:
   m_Father: {fileID: 2814101596855630350}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7622942074009098046
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062113713937018293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.005212303
+  m_Height: 0.012068344
+  m_Direction: 1
+  m_Center: {x: -0.0006057325, y: 0.00019546723, z: 0.00022085488}
+--- !u!114 &7622942074009098047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062113713937018293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232d87065db6c6447aa50143a1a80e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 1527666932}
+  NPCCharacter: {fileID: 7622942074009098045}
+  Name: Scruffy
+  score: 0
+  underSlideEntered: 0
+  sentences:
+  - Hi there! Lets be friends.
+  - Oh, what? No, I don't need you to do a task or anything. I just like the company.
+  sentencesConditional: []
+  questCompleted: 0
 --- !u!4 &7643891968969263292
 Transform:
   m_ObjectHideFlags: 0
