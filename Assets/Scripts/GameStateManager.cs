@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -8,6 +11,15 @@ public class GameStateManager : MonoBehaviour
     ParticleSystem part;
     public int score;
     public bool win;
+
+    public GameObject WinScreen;
+
+    public GameObject kirbyTick;
+    public GameObject kangarooTick;
+    public GameObject teddyDogTick;
+    public GameObject hattieTick;
+    public GameObject giraffeTick;
+    public GameObject scruffyTick;
 
     public bool kirbyIsFriend;
     public bool kangarooIsFriend;
@@ -64,12 +76,31 @@ public class GameStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(giraffeIsFriend){
+            giraffeTick.SetActive(true);
+        }
+        if(kirbyIsFriend){
+            kirbyTick.SetActive(true);
+        }
+        if(kangarooIsFriend){
+            kangarooTick.SetActive(true);
+        }
+        if(scruffyIsFriend){
+            scruffyTick.SetActive(true);
+        }
+        if(teddyDogIsFriend){
+            teddyDogTick.SetActive(true);
+        }
+        if(hattieIsFriend){
+            hattieTick.SetActive(true);
+        }
 
         if(kirbyIsFriend && kangarooIsFriend && giraffeIsFriend && teddyDogIsFriend && hattieIsFriend && scruffyIsFriend){
             win = true;
         }
 
         if (win){
+            WinScreen.SetActive(true);
             part.Play();
         }
     }
