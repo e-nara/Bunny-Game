@@ -14312,6 +14312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5166792595412910716}
+  - component: {fileID: 5548420245523585223}
   m_Layer: 0
   m_Name: hatgirl
   m_TagString: Untagged
@@ -14319,6 +14320,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &5548420245523585223
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5548420245523585222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.61845255
+  m_Height: 3.4804013
+  m_Direction: 1
+  m_Center: {x: -0.9300894, y: 0.84722096, z: -7.0219183}
 --- !u!1 &5583648952726641744
 GameObject:
   m_ObjectHideFlags: 0
